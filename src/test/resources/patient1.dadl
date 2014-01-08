@@ -1,0 +1,314 @@
+(PERSON) <
+	archetype_details = (ARCHETYPED) <
+		archetype_id = (ARCHETYPE_ID) <
+			value = <"openEHR-DEMOGRAPHIC-PERSON.patient.v1">
+		>
+		rm_version = <"1.0.1">
+	>
+	archetype_node_id = <"openEHR-DEMOGRAPHIC-PERSON.patient.v1">
+	details = (ITEM_TREE) <
+		archetype_node_id = <"at0001">
+		items = <
+			[1] = (ELEMENT) <
+				archetype_node_id = <"at0003">
+				name = (DV_TEXT) <
+					value = <"Sex">
+				>
+				value = (DV_TEXT) <
+					value = <"M">
+				>
+			>
+			[2] = (ELEMENT) <
+				archetype_node_id = <"at0004">
+				name = (DV_TEXT) <
+					value = <"Birthday">
+				>
+				value = (DV_DATE_TIME) <
+					value = <"1984-08-11T19:20:30+08:00">
+				>
+			>
+			[3] = (ELEMENT) <
+				archetype_node_id = <"at0005">
+				name = (DV_TEXT) <
+					value = <"Birthplace">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[4] = (ELEMENT) <
+				archetype_node_id = <"at0006">
+				name = (DV_TEXT) <
+					value = <"Nationality">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[5] = (ELEMENT) <
+				archetype_node_id = <"at0007">
+				name = (DV_TEXT) <
+					value = <"Ethnic">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[6] = (ELEMENT) <
+				archetype_node_id = <"at0008">
+				name = (DV_TEXT) <
+					value = <"Password">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[7] = (ELEMENT) <
+				archetype_node_id = <"at0009">
+				name = (DV_TEXT) <
+					value = <"Name">
+				>
+				value = (DV_TEXT) <
+					value = <"zhangsan">
+				>
+			>
+			[8] = (ELEMENT) <
+				archetype_node_id = <"at0010">
+				name = (DV_TEXT) <
+					value = <"NamePhonetic">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[9] = (ELEMENT) <
+				archetype_node_id = <"at0011">
+				name = (DV_TEXT) <
+					value = <"InsuranceType">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[10] = (ELEMENT) <
+				archetype_node_id = <"at0012">
+				name = (DV_TEXT) <
+					value = <"InsuranceNO">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[11] = (ELEMENT) <
+				archetype_node_id = <"at0013">
+				name = (DV_TEXT) <
+					value = <"ChargeType">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[12] = (ELEMENT) <
+				archetype_node_id = <"at0014">
+				name = (DV_TEXT) <
+					value = <"IDNO">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[13] = (ELEMENT) <
+				archetype_node_id = <"at0016">
+				name = (DV_TEXT) <
+					value = <"IDType">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[14] = (ELEMENT) <
+				archetype_node_id = <"at0017">
+				name = (DV_TEXT) <
+					value = <"UnitPhone">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[15] = (ELEMENT) <
+				archetype_node_id = <"at0018">
+				name = (DV_TEXT) <
+					value = <"MobilePhone">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[16] = (ELEMENT) <
+				archetype_node_id = <"at0019">
+				name = (DV_TEXT) <
+					value = <"email">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[17] = (ELEMENT) <
+				archetype_node_id = <"at0020">
+				name = (DV_TEXT) <
+					value = <"MSN">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[18] = (ELEMENT) <
+				archetype_node_id = <"at0021">
+				name = (DV_TEXT) <
+					value = <"QQ">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[19] = (ELEMENT) <
+				archetype_node_id = <"at0022">
+				name = (DV_TEXT) <
+					value = <"HomePhone">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[20] = (ELEMENT) <
+				archetype_node_id = <"at0023">
+				name = (DV_TEXT) <
+					value = <"Address">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[21] = (ELEMENT) <
+				archetype_node_id = <"at0024">
+				name = (DV_TEXT) <
+					value = <"ZipCode">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[22] = (ELEMENT) <
+				archetype_node_id = <"at0025">
+				name = (DV_TEXT) <
+					value = <"EducationType">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[23] = (ELEMENT) <
+				archetype_node_id = <"at0026">
+				name = (DV_TEXT) <
+					value = <"Job">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[24] = (ELEMENT) <
+				archetype_node_id = <"at0027">
+				name = (DV_TEXT) <
+					value = <"MarriageStatus">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[25] = (ELEMENT) <
+				archetype_node_id = <"at0028">
+				name = (DV_TEXT) <
+					value = <"ArmyType">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[26] = (ELEMENT) <
+				archetype_node_id = <"at0029">
+				name = (DV_TEXT) <
+					value = <"DutyType">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[27] = (ELEMENT) <
+				archetype_node_id = <"at0030">
+				name = (DV_TEXT) <
+					value = <"WorkStatus">
+				>
+				value = (DV_TEXT) <
+					value = <"text value">
+				>
+			>
+			[28] = (ELEMENT) <
+				archetype_node_id = <"at0031">
+				name = (DV_TEXT) <
+					value = <"Photo">
+				>
+				value = (DV_MULTIMEDIA) <
+					alternate_text = <"alternative text">
+					charset = (CODE_PHRASE) <
+						code_string = <"UTF-8">
+						terminology_id = (TERMINOLOGY_ID) <
+							value = <"IANA_character-sets">
+						>
+					>
+					compression_algorithm = (CODE_PHRASE) <
+						code_string = <"other">
+						terminology_id = (TERMINOLOGY_ID) <
+							value = <"openehr_compression_algorithms">
+						>
+					>
+					integrity_check_algorithm = (CODE_PHRASE) <
+						code_string = <"SHA-1">
+						terminology_id = (TERMINOLOGY_ID) <
+							value = <"openehr_integrity_check_algorithms">
+						>
+					>
+					language = (CODE_PHRASE) <
+						code_string = <"en">
+						terminology_id = (TERMINOLOGY_ID) <
+							value = <"ISO_639-1">
+						>
+					>
+					media_type = (CODE_PHRASE) <
+						code_string = <"text/plain">
+						terminology_id = (TERMINOLOGY_ID) <
+							value = <"IANA_media-types">
+						>
+					>
+					uri = (DV_URI) <
+						value = <"www.iana.org">
+					>
+				>
+			>
+			[29] = (CLUSTER) <
+				archetype_node_id = <"at0032">
+				name = (DV_TEXT) <
+					value = <"Visits">
+				>
+			>
+		>
+		name = (DV_TEXT) <
+			value = <"Patient details">
+		>
+	>
+	name = (DV_TEXT) <
+		value = <"Patient">
+	>
+	uid = (UID_BASED_ID) <
+		value = <"patient1">
+	>
+>
