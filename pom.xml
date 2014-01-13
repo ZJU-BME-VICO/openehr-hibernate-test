@@ -16,6 +16,8 @@
 		<springframework.version>4.0.0.RELEASE</springframework.version>
 		<cxf.version>2.7.6</cxf.version>
 		<openEHR.version>1.0.5-SNAPSHOT</openEHR.version>
+		<tomcat.port>9095</tomcat.port>
+		<tomcat.server>wl-pc</tomcat.server>
 	</properties>
 
 	<build>
@@ -45,7 +47,7 @@
 							<sourceRoot>${basedir}/target/generated-sources</sourceRoot>
 							<wsdlOptions>
 								<wsdlOption>
-									<wsdl>http://wl-pc:9095/openehr-hibernate/RMORMPersistence?wsdl</wsdl>
+									<wsdl>http://${tomcat.server}:${tomcat.port}/openehr-hibernate/RMORMPersistence?wsdl</wsdl>
 								</wsdlOption>
 							</wsdlOptions>
 						</configuration>
@@ -56,6 +58,24 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+		<testResources>
+			<testResource>
+				<directory>src/test/resources</directory>
+				<includes>
+					<include>**</include>
+				</includes>
+				<filtering>true</filtering>
+			</testResource>
+		</testResources>
 	</build>
 
 	<dependencies>

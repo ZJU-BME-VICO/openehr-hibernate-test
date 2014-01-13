@@ -28,7 +28,7 @@ public class RMORMPersistenceImplTest {
 	public RMORMPersistenceImplTest() {
 		@SuppressWarnings("resource")
 		ApplicationContext context = new ClassPathXmlApplicationContext(
-				"applicationContext.xml", RMORMPersistenceImplTest.class);
+				"/beans.xml", RMORMPersistenceImplTest.class);
 		
 		persistence = (RMORMPersistence) context.getBean("wsclient");
 	}

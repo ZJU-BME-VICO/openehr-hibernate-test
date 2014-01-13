@@ -18,7 +18,7 @@
     <jaxws:client 
     	id="wsclient"
 		serviceClass="edu.zju.bme.openehr.hibernate.service.RMORMPersistence"
-		address="http://wl-pc:9095/openehr-hibernate/RMORMPersistence?wsdl">
+		address="http://${tomcat.server}:${tomcat.port}/openehr-hibernate/RMORMPersistence?wsdl">
 	</jaxws:client>
 	
 </beans>
