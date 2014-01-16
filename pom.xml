@@ -15,7 +15,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springframework.version>4.0.0.RELEASE</springframework.version>
 		<cxf.version>2.7.6</cxf.version>
-		<openEHR.version>1.0.5-SNAPSHOT</openEHR.version>
+		<openEHR.version>1.0.5.1</openEHR.version>
 		<tomcat.port>9095</tomcat.port>
 		<tomcat.server>wl-pc</tomcat.server>
 	</properties>
