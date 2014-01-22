@@ -14,10 +14,10 @@
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springframework.version>4.0.0.RELEASE</springframework.version>
-		<cxf.version>2.7.6</cxf.version>
+		<cxf.version>2.7.8</cxf.version>
 		<openEHR.version>1.0.5.1</openEHR.version>
 		<tomcat.port>9095</tomcat.port>
-		<tomcat.server>wl-pc</tomcat.server>
+		<tomcat.server>wl-dell</tomcat.server>
 	</properties>
 
 	<build>
