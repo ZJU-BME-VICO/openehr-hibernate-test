@@ -17,7 +17,7 @@
 		<cxf.version>2.7.8</cxf.version>
 		<openEHR.version>1.0.5.1</openEHR.version>
 		<tomcat.port>9095</tomcat.port>
-		<tomcat.server>wl-dell</tomcat.server>
+		<tomcat.server>localhost</tomcat.server>
 	</properties>
 
 	<build>
