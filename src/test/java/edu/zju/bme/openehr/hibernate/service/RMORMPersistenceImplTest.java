@@ -36,11 +36,12 @@ public class RMORMPersistenceImplTest {
 	@Test
 	public void testInsert() throws Exception {		
 		List<String> dadls = new ArrayList<String>();
-		dadls.add(FileOperator.INSTANCE.readLinesFromResource("patient1.dadl"));
-		dadls.add(FileOperator.INSTANCE.readLinesFromResource("patient2.dadl"));
+		dadls.add(FileOperator.INSTANCE.readLinesFromResource("patient1.dadl").orElse(""));
+		dadls.add(FileOperator.INSTANCE.readLinesFromResource("patient2.dadl").orElse(""));
 		
 		List<String> adls = new ArrayList<String>();
-		adls.add(FileOperator.INSTANCE.readLinesFromFile("../document/knowledge/ZJU/archetype/openEHR-DEMOGRAPHIC-PERSON.patient.v1.adl"));
+		adls.add(FileOperator.INSTANCE.readLinesFromFile(
+				"../document/knowledge/ZJU/archetype/openEHR-DEMOGRAPHIC-PERSON.patient.v1.adl").orElse(""));
 		
 		assertEquals(persistence.insert(dadls, adls), 0);
 		assertEquals(persistence.insert(dadls, adls), 0);
@@ -56,7 +57,7 @@ public class RMORMPersistenceImplTest {
 				persistence.selectPersonByObjectUids(objectUids);
 		assertNotNull(listPerson);
 		assertEquals(listPerson.size(), 1);
-		String s1 = FileOperator.INSTANCE.readLinesFromResource("patient1.dadl");
+		String s1 = FileOperator.INSTANCE.readLinesFromResource("patient1.dadl").orElse("");
 		String s2 = listPerson.get(0);
 		Object o1 = parseDADL(s1);
 		Object o2 = parseDADL(s2);
@@ -66,7 +67,7 @@ public class RMORMPersistenceImplTest {
 		listPerson = persistence.selectPersonByObjectUids(objectUids);
 		assertNotNull(listPerson);
 		assertEquals(listPerson.size(), 2);
-		Object o3 = parseDADL(FileOperator.INSTANCE.readLinesFromResource("patient2.dadl"));
+		Object o3 = parseDADL(FileOperator.INSTANCE.readLinesFromResource("patient2.dadl").orElse(""));
 		Object o4 = parseDADL(listPerson.get(1));
 		assertTrue(o3.equals(o4));
 	}
