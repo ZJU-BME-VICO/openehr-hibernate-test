@@ -90,6 +90,12 @@
 			<version>${cxf.version}</version>
 		</dependency>
 		<dependency>
+			<!-- Comment this if maven generate source error -->
+			<groupId>org.apache.cxf</groupId>
+			<artifactId>cxf-rt-transports-http</artifactId>
+			<version>${cxf.version}</version>
+		</dependency>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.11</version>

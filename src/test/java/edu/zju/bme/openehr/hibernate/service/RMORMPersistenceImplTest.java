@@ -6,12 +6,8 @@ import static org.junit.Assert.assertTrue;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
-import java.io.UnsupportedEncodingException;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
-
 import org.junit.Test;
 import org.openehr.am.parser.ContentObject;
 import org.openehr.am.parser.DADLParser;
@@ -40,8 +36,8 @@ public class RMORMPersistenceImplTest {
 		dadls.add(FileOperator.INSTANCE.readLinesFromResource("patient2.dadl").orElse(""));
 		
 		List<String> adls = new ArrayList<String>();
-		adls.add(FileOperator.INSTANCE.readLinesFromFile(
-				"../document/knowledge/ZJU/archetype/openEHR-DEMOGRAPHIC-PERSON.patient.v1.adl").orElse(""));
+		adls.add(FileOperator.INSTANCE.readLinesFromResource(
+				"openEHR-DEMOGRAPHIC-PERSON.patient.v1.adl").orElse(""));
 		
 		assertEquals(persistence.insert(dadls, adls), 0);
 		assertEquals(persistence.insert(dadls, adls), 0);
